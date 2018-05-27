@@ -7,7 +7,7 @@
 \moderncvcolor{blue}  
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.78]{geometry}
+\usepackage[scale=0.785]{geometry}
 
 \definecolor{blue}{rgb}{0.22, 0.45, 0.698}
 \newcommand\Colorhref[3][blue]{\href{#2}{\small\color{#1}#3}}
@@ -17,7 +17,7 @@
 % personal data
 \name{Yi}{Zhen}
 \title{Curriculum Vitae}
-\address{97-401, Jinxiu Rd, Pudongxin District}{Shanghai 200000}{China}
+\address{11-502, Pusan Rd, Pudongxin District}{Shanghai 200000}{China}
 \mobile{+86~177~1768~7328}
 \email{iamzhenyi@gmail.com}
 \homepage{izhen.me}
@@ -28,51 +28,41 @@
 \begin{document}
 \makecvtitle
 
-\section{Education}
-\cventry{Sep. 2015 -- Nov. 2016}
-{Master of Science in Artificial Intelligence}
-{University of Edinburgh}
-{Edinburgh, U.K.}
-{\textit{Pass with Merit}}
-{Dissertation: Deriving Pretty-printing for Haskell, supervised by Prof. Philip Wadler}
-
-\cventry{Sep. 2011 -- Jun. 2015}
-{Bachelor of Engineering in Software Engineering}
-{Sun Yat-sen University}
-{Guangzhou, P.R.China}
-{GPA \textit{: 3.3}}
-{Recommended for admission to SYSU and exempted from Gaokao because of well performance at NOIP}
-
-\subsection{Major Courses}
-{\small Machine Learning \& Pattern Recognition, Automated Reasoning,  Secure Programming,  Types and Semantics for Programming Languages, Compiler Optimisation, Artificial Intelligence, Algorithm Design and Analysis, Data Mining, Numerical Computation Methods}
-
 \section{Experience}
 \begin{itemize}
 	\item Apr. 2017 -- Present, Software Engineer, \Colorhref[blue]{http://www.citigroup.com/china/csts/}{\textit{Citigroup Inc.}}, Shanghai, P.R.China
 	\item Feb. 2014 -- Apr. 2014, Research Assistant Intern, \Colorhref[blue]{http://www.compsci.sysu.edu.cn/cn/cn01/index.htm}{\textit{Guangdong Province Key Laboratory of Computational Science}}, Guangzhou, P.R.China
 \end{itemize}
 
-\section{Skills}
-\subsection{Programming Language and Framework}
-\cvitem{Languages}{Java, C/C++, Python, Haskell, Scala, Prolog, Coq, Scheme}
-\cvitem{Frameworks \& Tools}{Spring, Ext JS, JUnit, Mockito, JDBC, JMS, Java servlet, SQL, TensorFlow, Tomcat, Git, SonarQube, Spark, Amazon EC2, NuSMV, Isabelle, Vim, \LaTeX}
-\subsection{Professional Skills}
-\begin{itemize}
-	\item Machine Learning, Automated Reasoning and Knowledge Representation
-	\item Full-stack development, RESTful API design and Continuous Integration for web application
-\end{itemize}
-
 \section{Miscellaneous}
-\subsection{School Team}
-\cventry{2014}{Team member}{Sun Yat-sen University ASC Student Supercomputer Challenge Team}{}{}{
-    \begin{itemize}
-    	\item ASC14 required the team to wring the most HPC performance out of a 3000W power allowance
-        	\item Mastered the numerical methods,  relevant algorithms, heterogeneous and multiprocessor programming
-	\item Optimized the SU$^{2}$ -- a Stanford University developed open-source C++ code for PDE analysis and designed things that adhere to PDE constraints, and assisted in the HPL event
+\subsection{Job Projects}
+%\item{
+\cventry{Aug. 2017 -- Present}{Wire Transfer system for block trading agent}{\textsf{WIRE}}{engineer at Citigroup}{}{
+	Customers book payment, pre-advice and deposit wire transfers on the platform
+	\begin{itemize}
+		\item Full-stack development for Currency Eligibility module: Developed front-end using MVC model with the help of Ext JS. Implemented CRUD, approval and drill-down analysis of Available Straddle value. Using Facade, Factory and Dynamic Proxy patterns designed and implemented controller, services and DAO for back-end
+		\item Developed reconciliation module for downstream data warehouse team: abstracted business logic to TCP-like 3-way handshake protocol through FSM.
+Implemented asynchronous unmarshalling message ability
+		\item Debugging existing bugs and analyzing daily logs. Continuous Integration
 	\end{itemize}
 }
+%}
+%\item{
+\cventry{Apr. 2017 -- Aug. 2017}{Anti money laundering platform}{\textsf{EWARA}}{engineer at Citigroup}{}{
+	\begin{itemize}
+		\item Implemented approval logic for tree-form entities. Developed general DAO for arbitrary tables by JDBC
+		\item Participated in email alert ability implementation, RESTful API design, PDF report module enhancement
+		\item Using reflection techniques to extend POJO test module for automation unit test
+	\end{itemize}
+}
+%}
+%\item{
+\cventry{Jun. 2017 -- Aug. 2017}{Experimental AI project}{\textsf{HAMSTER}}{engineer at Citigroup}{}{
+   	Recognition and NLP for scanning image of bank statement. Writing and debugging image alignment algorithm
+}
+%}
 
-\subsection{Projects}
+\subsection{Side Projects}
 %\begin{itemize}
 %\item{
 \cventry{Nov. 2016 -- Jan. 2017}{web app}{\textsf{Project Lambda}}{founder}{}{
@@ -80,6 +70,7 @@
 	\begin{description}
 		\item[Keywords] Haskell 8.0.2, Scotty, Persistent, mime-mail, websockets, Blaze, PostgreSQL, Bootstrap, jQuery
 		\item[Github Address] \texttt{https://github.com/ProLambda/Times}
+		\item[Chinese Blog Article] \texttt{https://izhen.me/2017/08/20/aws-lambda/}
 		%\item[Hello] ~
 		%	\begin{itemize}
 		%		\item Machine learning and its applications in natural language processing
@@ -89,7 +80,7 @@
 %}
 
 %\item{
-\cventry{Jun. 2016 -- Aug. 2016}{package}{\textsf{PPrinter: A generic derivable Haskell pretty printer}}{author}{}{
+\cventry{Jun. 2016 -- Aug. 2016}{Haskell Library - 1413 times download till 05/27/2018}{\textsf{PPrinter: A generic derivable Haskell pretty printer}}{author}{}{
    	PPrinter is a Haskell library that supports automatic derivation of pretty printing functions on user defined arbitrary data types (the deriving mechanism supports the automatic generation of instances for functions)
 	\begin{description}
 		\item[Keywords] Dissertation Project, Hackage, Haskell 7.10.2
@@ -97,7 +88,6 @@
 	\end{description}
 }
 %}
-
 
 %\item{
 \cventry{Oct. 2015 -- Dec. 2015}{system software}{\textsf{Compiler of Small-C}}{developer}{}{
@@ -128,22 +118,41 @@
 }
 %}
 
-%\item{
-\cventry{Mar. 2012 -- Apr. 2012}{server-side module}{\textsf{The Kernel of Online Judge}}{indie developer}{}{
-   	This is an online system that can compile and execute codes and then test them with pre-constructed data. Users submit code and run it with restrictions (time limit, memory limit, etc.). The output of the code will be compared with the standard output and then return the result to the users
-	\begin{description}
-		\item[Keywords] C/C++, Linux, Linux-API
-		\item[Github Address] \texttt{https://github.com/i-zhen/Simple-OJ-core}
-	\end{description}
+\subsection{School Team}
+\cventry{2014}{Team member}{Sun Yat-sen University ASC Student Supercomputer Challenge Team}{}{}{
+    \begin{itemize}
+    	\item ASC14 required the team to wring the most HPC performance out of a 3000W power allowance
+        	\item Mastered the numerical methods,  relevant algorithms, heterogeneous and multiprocessor programming
+	\item Optimized the SU$^{2}$ -- a Stanford University developed open-source C++ code for PDE analysis and designed things that adhere to PDE constraints, and assisted in the HPL event
+	\end{itemize}
 }
-%}
 
 %\end{itemize}
 
+\section{Professional Skills}
+\subsection{Programming Language and Framework}
+\cvitem{Language}{Haskell, Java, C/C++, Python, Scala, Prolog, Coq, Isabelle}
+\cvitem{Framework}{Spring, JMS, Ext JS, JUnit, Mockito, JDBC, Logger, Java servlet, SQL, Jaxb2Marshaller}
+\cvitem{Tools}{Jenkins, uDeploy, AutoSys, JIRA, Git, SonarQube, Amazon EC2, NuSMV, Vim, Eclipse, \LaTeX}
+
 \section{Awards}
-%\cventry{Jan 2018}{Alibaba Tianchi Big Data Competition - AI Aid for Genetic Risk Prediction of Diabetes}{Top 1\%}{}{}{}
 \cventry{2014}{The ASC Student Supercomputer Challenge (ASC14)}{First Prize and Highest Linpack Award}{}{}{Set a new world record of HPL(Linpack) performance and won ¥10,000 CNY}
 \cventry{2014}{The ACM-ICPC China Guangdong Provincial Programming Contest (GDCPC)}{Bronze Medal (Third Prize)}{}{}{}
 \cventry{2009\&2008}{The National Olympiad in Informatics in Provinces (NOIP)}{Two-time recipient of First Prize}{}{}{}
+
+\section{Education}
+\cventry{Sep. 2015 -- Nov. 2016}
+{Master of Science in Artificial Intelligence}
+{University of Edinburgh}
+{Edinburgh, U.K.}
+{\textit{Pass with Merit}}
+{Dissertation: Deriving Pretty-printing for Haskell, supervised by Prof. Philip Wadler}
+
+\cventry{Sep. 2011 -- Jun. 2015}
+{Bachelor of Engineering in Software Engineering}
+{Sun Yat-sen University}
+{Guangzhou, P.R.China}
+{GPA \textit{: 3.3}}
+{Recommended for admission to SYSU and exempted from Gaokao because of well performance at NOIP}
 
 \end{document}
