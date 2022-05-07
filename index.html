@@ -183,7 +183,7 @@
 						<h4><i class="fa-solid fa-bullseye"></i>Target</h4>
 						<hr/>
 						<div class="item">
-							<div>Tech Lead, R&D Engineer, Algorithm Engineer</div>
+							<div>Tech Lead, R&D Engineer, web3/Smart Contract/Blockend Engineer</div>
 						</div>
 					</div>
 				</div>
@@ -342,7 +342,7 @@
 							<hr/>
 							<div class = "item">
 								<ul class="description">
-									<li><span class="bold">Languages (MRU):</span><span>Rust, TypeScript, C/C++, Java, Haskell, Python, Scala, Prolog, Coq, Scheme, APL, Turbo Pascal, Quick Basic, C#</span></li>
+									<li><span class="bold">Languages (MRU):</span><span>Rust, Solidity, Vyper, TypeScript, C/C++, Java, Haskell, Python, Scala, Prolog, Coq, Scheme, APL, Turbo Pascal, Quick Basic, C#</span></li>
 									<li><span class="bold">Frameworks &amp; Tools:</span><span>clangd/vscode-clangd, Soot, Apache BCEL, Spring, Ext JS, JUnit, Mockito, JDBC, JMS, Java servlet, SQL, TensorFlow, Tomcat, Git, SonarQube, Spark, Amazon EC2, NuSMV, Isabelle, LaTeX, Matlab</span></li>
 									<li><span class="bold">Editor &amp; IDE:</span><span>Vim, Emacs, IntelliJ IDEA, Xcode, Eclipse, Visual Studio Code</span></li>
 									<li><span class="bold">OS:</span><span>Linux, MAC OS X (daily)</span></li>
@@ -388,22 +388,40 @@
 						<hr/>
 
 						<div class="item">
-							<div class="title">Gödel Programming Language System<span class="status">co-owner</span></div>
+							<div class="title">Gödel Domain-Specific Big-Data Solution<span class="status">co-owner</span></div>
 							<div class="summary-info">
-								<div class="summary">Domain Specific Language; Compiler</div>
+								<div class="summary">Datalog-based OO Programming Language, and Data Analysis Engine</div>
 								<div class="time">Jul 2021 - Present</div>
 							</div>
 							<div class="content">
 								<ul class="description">
 									<span>
 										<ul>
-											<li>Datalog-based OO Programming Language design and implementation. Such language focus on big data analytics,
-												works with soufflé as the datalog execution engine
+											<li>Gödel datalog-based OO programming language system design and implementation:
+												Such language focus on big data analytics, integrated with soufflé as the datalog execution engine
 											</li>
-											<li>Composed and Wrote Language Specification of Gödel</li>
-											<li>Research for decentralized edge streaming system</li>
+											<li>Programming Model: logic, declarative, objected-oriented, query-based</li>
+											<li>Lambda Calculus and Desugar: closure is a great feature, Gödel implemented lambda as a grammar sugar in early version,
+												and will have a real closure in next release
+											</li>
+											<li>Name Resolution: name analysis, closure capture analysis, path resolution</li>
+											<li>Type Inference and Type Check: Gödel has a simple type system, thus type inference and checking based on intuitionistic logic</li>
+											<li>Multi-IR Hierarchy: Gödel has several layers of IR: AST->HIR->MIR->LIR->soufflé. 
+												HIR stands for "high-level IR", roughly an abstract syntax tree.
+												MIR stands for mid-level IR, because the MIR comes between the existing HIR and LIR.
+												LIR stands for SSA-based "low-level" IR
+											</li>
+											<li>Codegen: IR2IR transformation; Gödel2Soufflé transformation</li>
+											<li>Semantic Optimization: speed up the Soufflé code and solve ungrounded problem</li>
+											<li>Compiler Architecture: semi-pass based and semi-query based architecture</li>
+											<li>Session and Compile Environment: serialization and thread-safe global compile environment. Enbale incremental compilation, parallelizing compilation,
+												external library support and dynamic loading
+											</li>
+											<li>Documentation: Composed and Wrote Language Specification of Gödel</li>
+											<li>Business: Research for web3 and Decentralized edge streaming system</li>
 										</ul>
 									</span>
+									<li><span class="bold">Keywords</span><span>Rust, DSL, Soufflé, Datalog, Runtime, Compiler</span></li>
 								</ul>
 							</div>
 						</div>
